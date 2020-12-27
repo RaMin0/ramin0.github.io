@@ -49,12 +49,13 @@
       html, body { height: 100%; background-color: white; color: black; padding: 0; }
 
       * { font-family: "Muli", sans-serif; }
-      a { text-decoration: none; color: black !important; }
+      a { text-decoration: none; color: black !important; display: inline-block; }
       a span { border-bottom: 1px dashed transparent; }
       a:hover span { border-bottom-color: inherit; }
       .main { position: relative; min-height: 100%; min-width: 300px; max-width: 300px; padding: 30px 0; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
       .info { margin-top: 30px; padding: 0 10px; }
-      .info h1 span { display: block; white-space: nowrap; }
+      .info audio { display: none; }
+      .info h1 span { display: block; white-space: nowrap; margin-bottom: -15px; padding-bottom: 3px; }
       .info h2 { font-weight: normal; }
       .img {
         /* background-image: url(https://graph.facebook.com/569330281/picture?type=large&redirect=true&width=720&height=720); */
@@ -124,7 +125,13 @@
     <div class="main" id="main">
       <a class="img" href="/cv"></a>
       <div class="info">
-        <h1><small>Hi,</small> <span>I'm Ramy.</span></h1>
+        <audio><source src="data:audio/mpeg;base64,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" type="audio/mpeg"></audio>
+        <h1>
+          <small>Hi,</small>
+          <span>
+            I'm <a href="https://www.urbandictionary.com/define.php?term=Ramy" target="_blank"><span>Ramy</span></a><sup><a href="#" onclick="document.getElementsByTagName('audio')[0].play();return false;"><i class="typcn typcn-volume"></i></a></sup>
+          </span>
+        </h1>
         <h2><a href="/cv"><span>Software Engineer</span> <i class="typcn typcn-arrow-right"></i></a></h2>
         <ul class="social">
           <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#109;&#121;&#64;&#97;&#98;&#111;&#117;&#108;&#110;&#97;&#46;&#103;&#97;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#72;&#105;"><i class="typcn typcn-social-at-circular"></i><span>&#114;&#97;&#109;&#121;&#64;&#97;&#98;&#111;&#117;&#108;&#110;&#97;&#46;&#103;&#97;</span></a></li>
