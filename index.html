@@ -55,7 +55,9 @@
       .main { position: relative; min-height: 100%; min-width: 300px; max-width: 300px; padding: 30px 0; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
       .info { margin-top: 30px; padding: 0 10px; }
       .info audio { display: none; }
+      .info h1 { margin-bottom: 1.05em; }
       .info h1 span { display: block; white-space: nowrap; margin-bottom: -15px; padding-bottom: 3px; }
+      .info h1 sup { display: inline-block; margin-bottom: -1.05em; }
       .info h2 { font-weight: normal; }
       .img {
         /* background-image: url(https://graph.facebook.com/569330281/picture?type=large&redirect=true&width=720&height=720); */
@@ -129,7 +131,8 @@
         <h1>
           <small>Hi,</small>
           <span>
-            I'm <a href="https://www.urbandictionary.com/define.php?term=Ramy" target="_blank"><span>Ramy</span></a><sup><a href="#" onclick="document.getElementsByTagName('audio')[0].play();return false;"><i class="typcn typcn-volume"></i></a></sup>
+            I'm <a href="https://www.urbandictionary.com/define.php?term=Ramy" target="_blank"><span>Ramy</span></a><sup id="audio" style="display: none;"><a href="#" onclick="document.getElementsByTagName('audio')[0].play(); return false;"><i class="typcn typcn-volume"></i></a></sup>
+            <script>document.getElementById('audio').style = 'display: inline-block;'</script>
           </span>
         </h1>
         <h2><a href="/cv"><span>Software Engineer</span> <i class="typcn typcn-arrow-right"></i></a></h2>
