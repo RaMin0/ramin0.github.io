@@ -43,6 +43,7 @@
     <!--<meta property="og:image" content="https://graph.facebook.com/569330281/picture?type=large&redirect=true&width=720&height=720" />-->
     <meta property="og:image" content="https://ramy.aboulna.ga/ramy-aboul-naga.jpg?20210723154156" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" />
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" /> -->
     <link rel="stylesheet" href="typicons.min.css" />
@@ -140,7 +141,7 @@
             <script>document.getElementById('audio').style = 'display: inline-block;'</script>
           </span>
         </h1>
-        <h2><a href="/cv"><span>Software Engineer</span> <i class="typcn typcn-arrow-right"></i></a></h2>
+        <h2><a id="cv" class="animate__animated animate__tada animate__delay-3s" href="/cv"><span>Software Engineer</span> <i class="typcn typcn-arrow-right"></i></a></h2>
         <ul class="social">
           <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#109;&#121;&#64;&#97;&#98;&#111;&#117;&#108;&#110;&#97;&#46;&#103;&#97;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#72;&#105;"><i class="typcn typcn-social-at-circular"></i><span>&#114;&#97;&#109;&#121;&#64;&#97;&#98;&#111;&#117;&#108;&#110;&#97;&#46;&#103;&#97;</span></a></li>
           <li><a href="https://github.com/ramin0"><i class="typcn typcn-social-github-circular"></i><span>github.com/ramin0</span></a></li>
@@ -191,5 +192,20 @@
         <li><a href="https://youtube.com/watch?v=21gGFT5Nye4"><img src="https://i.ytimg.com/vi/21gGFT5Nye4/maxresdefault.jpg" /><span>Episode 19: pdf</span></a></li>
       </ul>
     </div>
+
+    <script>
+      function animateWithDelay(id, animationClass, delay) {
+        var elm = document.getElementById(id);
+        setTimeout(function() {
+          elm.classList.remove(animationClass);
+          setTimeout(function() {
+            elm.classList.add(animationClass);
+            animateWithDelay(id, animationClass, delay);
+          }, 100);
+        }, delay);
+      }
+
+      animateWithDelay('cv', 'animate__tada', 7000)
+    </script>
   </body>
 </html>
