@@ -83,6 +83,7 @@
       .tags li { display: inline-block; margin-right: 5px; }
       .tags li:last-child { margin-right: 0; }
       .tags li:before { content: "#"; font-weight: bold; }
+      .hide { display: none; }
 
       @media (max-width: 720px) {
         .personal-info { display: block; }
@@ -154,6 +155,51 @@
         <li>eventhub</li>
         <li>postgresql</li>
         <li>redis</li>
+        <li>jenkins</li>
+      </ul>
+    </div>
+
+    <div data-toggle="hide" class="no-break hide">
+      <h3><a href="https://swvl.com">Swvl</a><span>, Remote, EG</span></h3>
+      <span data-range="2021-01:2022-11">Staff Engineer / Jan 2021 – Nov 2022 <span>(1 yr, 11 mos)</span></span>
+      <ul class="role-details">
+        <li><strong>Support</strong> in enabling <strong>multi-tenancy</strong> across all micro-services, on both the application and data storage layers.</li>
+        <li><strong>Decompose</strong> portions of the monolith API application into maintainable <strong>micro-services</strong>.</li>
+        <li><strong>Maintain</strong> and <strong>document</strong> current and legacy applications.</li>
+        <li><strong>Coordinate</strong> the <strong>communication</strong> among the engineering team and involved stakeholders.</li>
+        <li><strong>Onboard</strong> and <strong>mentor</strong> new and current backend engineers with different tenures.</li>
+        <li><strong>Act</strong> as a <strong>technical reference</strong> across multiple backend squads in tackling complex challenges.</li>
+        <li><strong>Moderate</strong> kick-off and brainstorming sessions with the engineering team.</li>
+        <li><strong>Lead</strong> pair-/mob-programming and PR review sessions.</li>
+        <li><strong>Present</strong> intermediate and advanced technical topics in the backend engineering chapter meeting.</li>
+        <li><strong>Interview</strong> and <strong>assess</strong> prospect engineering candidates.</li>
+      </ul>
+      <ul class="tags">
+        <li>node</li>
+        <li>go</li>
+        <li>python</li>
+        <li>bash</li>
+        <li>geojson</li>
+        <li>kubernetes</li>
+        <li>helm</li>
+        <li>gcp</li>
+        <li>gke</li>
+        <li>cloud-functions</li>
+        <li>big-query</li>
+        <li>aws</li>
+        <li>ecs</li>
+        <li>lambda</li>
+        <li>rds</li>
+        <li>redshift</li>
+        <li>ebs</li>
+        <li>s3</li>
+        <li>sns</li>
+        <li>cloud-watch</li>
+        <li>mongodb</li>
+        <li>postgresql</li>
+        <li>datadog</li>
+        <li>sentry</li>
+        <li>github-actions</li>
         <li>jenkins</li>
       </ul>
     </div>
@@ -371,6 +417,19 @@
         var rangeSpan = document.createElement("SPAN");
         rangeSpan.innerHTML = " (" +  rangeString + ")";
         span.appendChild(rangeSpan);
+      }
+    </script>
+    <script>
+      var toggleHide = new URL(window.location.href).searchParams.get('eg') != undefined
+      if (toggleHide) {
+        var divs = document.getElementsByTagName("div");
+        for (var div of divs) {
+          var dataToggle = div.getAttribute("data-toggle");
+          if (dataToggle !== 'hide') {
+            continue;
+          }
+          div.classList.remove('hide')
+        }
       }
     </script>
   </body>
