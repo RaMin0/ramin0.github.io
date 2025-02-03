@@ -52,16 +52,17 @@
       h1 { margin-top: 0; }
       h1 span { white-space: nowrap; }
       h2 { margin-top: 30px; }
-      h3 { margin-bottom: 0; }
+      h3, h4 { margin-bottom: 0; }
       h3 span { font-weight: normal; }
-      h3:before {
+      h3:before, h4:before {
         content: "#";
         display: none;
         width: 1em;
         margin-left: -1em;
         font-weight: normal;
       }
-      div:hover > h3:before { display: inline-block; }
+      h4 { margin-top: 15px; }
+      div:hover > h3:before, div:hover > h4:before { display: inline-block; }
       p { margin: 0; }
       span.u { text-decoration: underline; }
       p, li, span, dt, dd, a { line-height: 1.5rem; }
@@ -75,6 +76,7 @@
       .personal-info { margin: 0; padding: 0; display: flex; justify-content: space-between; flex-wrap: nowrap; }
       .personal-info li { list-style: none; white-space: nowrap; }
       .personal-info span { font-weight: bold; font-size: smaller; }
+      .summary { text-align: justify; }
       .summary + .summary { margin-top: 1rem; }
       .role-details { margin: 5px 0; padding: 0; list-style: none; }
       .role-details li { padding-left: 15px; }
@@ -103,14 +105,14 @@
 
       @media print {
         .no-break { page-break-inside: avoid; }
-        h3:before { display: none !important; }
+        h3:before, h4:before { display: none !important; }
         span:not([data-range*=":"]) span { display: none; }
       }
 
     </style>
   </head>
   <body>
-    <h1>Ramy <span>Aboul Naga</span></h1>
+    <h1>Ramy <span>Aboulnaga</span></h1>
 
     <ul class="personal-info">
       <li><span>dob:</span> 21 Mar 1989</li>
@@ -124,10 +126,40 @@
       <li><span>personal:</span> <a href="/">ramy.aboulna.ga</a></li>
     </ul>
 
-    <h2>Skills Summary</h2>
+    <h2>Summary</h2>
 
-    <p class="summary"><script>document.write(new Date().getFullYear()-2008)</script><noscript>17</noscript>+ years of experience in web applications development and technical team leading skills. Looking to fill a position where I get to motivate and mentor a team of engineers and orchestrate building the next big online platform.</p>
-    <p class="summary"><span class="u">Topics of interest:</span> Web Application Development, Micro-services Architecture, Chat Bots Design, Cloud Computing, Parallel Programming and Concurrency, Networking and Socket Programming, Database Design and Optimization, Data Structures and OO–Programming, and UI/UX Development.</p>
+    <p class="summary">Seasoned software engineering leader with over <strong><script>document.write(new Date().getFullYear()-2008)</script><noscript>17</noscript> years</strong> of experience <strong>architecting</strong> and <strong>delivering</strong> high-performance, scalable <strong>web applications and platforms</strong>. Adept at transitioning legacy systems into modern, <strong>microservices-based architectures</strong> and driving <strong>cloud adoption</strong>. Proven track record of <strong>mentoring</strong> cross-functional teams, <strong>leading</strong> complex projects across multiple geographies, and collaborating with senior stakeholders to align <strong>technical strategies</strong> with <strong>business goals</strong>. Passionate about building robust, innovative solutions in dynamic, <strong>global environments</strong>.</p>
+
+    <h3>Competencies</h3>
+
+    <div class="no-break">
+      <h4>Technical Leadership & Architecture</h4>
+      <ul class="role-details">
+        <li>Extensive experience in designing <strong>distributed systems</strong> and <strong>microservices architectures</strong> that handle <strong>high transaction</strong> volumes and <strong>large datasets</strong>.</li>
+        <li>Skilled in <strong>planning</strong> and <strong>executing</strong> system migrations with <strong>minimal downtime</strong>, ensuring <strong>continuity and performance</strong>.</li>
+      </ul>
+    </div>
+    <div class="no-break">
+      <h4>Cloud & DevOps</h4>
+      <ul class="role-details">
+        <li>Proficient in <strong>cloud computing</strong> platforms (GCP, Azure, AWS) and <strong>container orchestration</strong> (Docker, Kubernetes) to drive <strong>scalable, reliable infrastructure</strong>.</li>
+        <li>Expertise in building and maintaining <strong>CI/CD pipelines</strong> and enforcing <strong>best practices</strong> in DevOps and security.</li>
+      </ul>
+    </div>
+    <div class="no-break">
+      <h4>Full-Stack & API Development</h4>
+      <ul class="role-details">
+        <li>Deep hands-on <strong>coding experience</strong> in multiple languages (Go, Ruby, NodeJS/TypeScript, Java, Python) and frameworks, creating robust <strong>RESTful APIs</strong> and web applications.</li>
+        <li>Strong expertise in <strong>databases and data management</strong>, including MySQL, PostgreSQL, MongoDB, and Redis, ensuring <strong>data integrity and high performance</strong>.</li>
+      </ul>
+    </div>
+    <div class="no-break">
+      <h4>Stakeholder & Team Collaboration</h4>
+      <ul class="role-details">
+        <li>Proven ability to <strong>lead</strong> engineering teams, <strong>mentor</strong> emerging talent, and interface with <strong>cross-functional</strong> teams and <strong>external partners</strong>.</li>
+        <li>Experience presenting <strong>technical roadmaps</strong> and engaging in company-wide <strong>strategic discussions</strong>.</li>
+      </ul>
+    </div>
 
     <h2>Experience</h2>
 
@@ -135,11 +167,10 @@
       <h3><a id="inpay" href="https://inpay.com">Inpay</a><span>, Copenhagen, DK</span></h3>
       <span data-range="2024-03">Senior Software Engineer / Mar 2024 – Present</span>
       <ul class="role-details">
-        <li><strong>Architect</strong> the migration of <strong>over 30M transactions</strong> to v2 with zero downtime.</li>
-        <li><strong>Maintain</strong> the existing collections application and <strong>develop</strong> new features to meet <strong>consumer needs</strong>.</li>
-        <li><strong>Represent</strong> the team in cross-team discussions and company-wide demos to key <strong>stakeholders</strong>.</li>
-        <li><strong>Engage</strong> in technical discussions alongside senior peers and solution architects within the engineering team.</li>
-        <li><strong>Communicate</strong> with third-party providers to ensure alignment with <strong>business needs</strong> and adhere to <strong>delivery deadlines</strong>.</li>
+        <li><strong>Architected</strong> and <strong>executed</strong> the migration of over 40M transactions to a structured v2 with <strong>zero downtime</strong>, ensuring enhanced system <strong>reliability and performance</strong>.</li>
+        <li><strong>Enhanced</strong> and <strong>maintained</strong> critical payment and collections applications while introducing new features aligned with evolving <strong>consumer and business needs</strong>.</li>
+        <li><strong>Represented</strong> the engineering team in <strong>cross-departmental discussions</strong> and demos, collaborating with senior peers and solution architects to align <strong>technical strategies</strong>.</li>
+        <li><strong>Engaged</strong> with <strong>third-party providers</strong> to align on <strong>integration requirements</strong> and ensure <strong>on-time delivery</strong> in a fast-paced environment.</li>
       </ul>
       <ul class="tags">
         <li>ruby</li>
@@ -157,24 +188,19 @@
       <h3><a id="breadfast" href="https://breadfast.com">Breadfast</a><span>, Consultant, EG</span></h3>
       <span data-range="2023-12">Staff Software Engineer / Dec 2023 – Present</span>
       <ul class="role-details">
-        <li><strong>Coordinate</strong> with the on-prem hosting provider to make sure the platform is <strong>production-ready</strong> and <strong>well-monitored</strong>.</li>
-        <li><strong>Review</strong> and <strong>remediate</strong> security issues identified during <strong>penetration testing</strong> to strengthen the application's security.</li>
-        <li><strong>Cooperate</strong> with third-party providers to ensure the stability of our integrations and reliability of cross-system communication during regression testing and production loads.</li>
-        <li><strong>Led</strong> the initiative to achieve <strong>PCI-DSS 4.0</strong> compliance across the payments web app, mobile SDK, and associated infrastructure.</li>
-        <li><strong>Develop</strong> tooling and work with <strong>cross-functional</strong> teams to resolve issues and unblock supporting functions, keeping deliverables on schedule.</li>
-        <li><strong>Collaborate</strong> with the engineering managers on development plans for junior and senior software engineers.</li>
-        <li><strong>Assess</strong> team deliverables for quality and alignment with coding best practices and industry standards.</li>
+        <li><strong>Coordinated</strong> with on-prem hosting partners to ensure <strong>production readiness</strong> and robust <strong>monitoring</strong> of <strong>high-availability</strong> platforms.</li>
+        <li><strong>Led</strong> security remediation efforts post-<strong>penetration testing</strong>, reinforcing application and <strong>infrastructure security standards</strong> including PCI-DSS 4.0 compliance.</li>
+        <li><strong>Developed</strong> tooling and partnered with <strong>cross-functional</strong> teams to resolve issues, <strong>streamline</strong> integrations, and <strong>maintain</strong> rigorous <strong>quality standards</strong> across deliverables.</li>
+        <li><strong>Collaborated</strong> with engineering management on <strong>professional development</strong> and <strong>performance assessments</strong> of engineering teams.</li>
       </ul>
       <ul class="tags">
-        <li>node</li>
+        <li>node-js</li>
         <li>typescript</li>
         <li>go</li>
         <li>react-js</li>
         <li>mysql</li>
         <li>datadog</li>
         <li>pci-dss</li>
-        <li>pentest</li>
-        <li>on-prem</li>
         <li>devops</li>
       </ul>
     </div>
@@ -183,25 +209,23 @@
       <h3><a id="maersk" href="https://maersk.com">A.P. Moller - Maersk</a><span>, Copenhagen, DK</span></h3>
       <span data-range="2019-01:2023-11">Lead Software Engineer / Jan 2019 – Nov 2023 <span>(4 yrs, 11 mos)</span></span>
       <ul class="role-details">
-        <li><strong>Built</strong> Maestro from scratch, a <strong>data platform</strong> that serves <strong>petabytes</strong> of data to <strong>thousands</strong> of internal users and customers through a centralized <strong>RESTful API</strong>.</li>
-        <li><strong>Developed</strong> a <strong>data pipeline</strong> responsible for <strong>extracting</strong>, <strong>transforming</strong> and <strong>hydrating</strong> Maestro with data from legacy sources, making it a single source of truth.</li>
-        <li><strong>Implemented</strong> a portal to host a variety of low- and no-code <strong>tools</strong> serving the Platform, DevOps, Self-Service, Analytics, Data Transformation, Data Orchestration, Data Governance, and API Integration.</li>
-        <li><strong>Participated</strong> in <strong>workshops</strong> to help expand my team's technical knowledge and experience novel programming languages.</li>
-        <li><strong>Organized</strong> Feb. 2019's Go meetup and <strong>attended</strong> others to better integrate into the developers community in Copenhagen.</li>
+        <li><strong>Designed</strong> and built &ldquo;Maestro,&rdquo; a data platform from the ground up serving <strong>petabytes</strong> of data via <strong>centralized RESTful APIs</strong> to thousands of internal users and external customers.</li>
+        <li><strong>Developed</strong> a comprehensive <strong>data pipeline</strong> to extract, transform, and consolidate legacy data into a single source of truth, <strong>enabling</strong> robust <strong>analytics and reporting</strong>.</li>
+        <li><strong>Implemented</strong> a multi-tool portal offering <strong>low- and no-code solutions</strong> across DevOps, self-service analytics, data transformation, governance, and API integration.</li>
+        <li><strong>Spearheaded</strong> technical <strong>workshops</strong> and <strong>community events</strong> (e.g., organizing Go meetups) to elevate team expertise and integrate <strong>innovative practices</strong> within the engineering community.</li>
       </ul>
       <ul class="tags">
         <li>go</li>
         <li>java</li>
         <li>python</li>
+        <li>bash</li>
         <li>hadoop</li>
         <li>react-js</li>
         <li>kubernetes</li>
         <li>azure</li>
         <li>webapps</li>
-        <li>adf</li>
         <li>databricks</li>
         <li>datalake</li>
-        <li>hdinsight</li>
         <li>eventhub</li>
         <li>postgresql</li>
         <li>redis</li>
@@ -214,38 +238,20 @@
       <h3><a id="swvl" href="https://swvl.com">Swvl</a><span>, Maadi, EG</span></h3>
       <span data-range="2016-02:2018-12">Staff Software Engineer / Feb 2016 – Dec 2018 <span>(2 yrs, 11 mos)</span></span>
       <ul class="role-details">
-        <li><strong>Supported</strong> in enabling <strong>multi-tenancy</strong> across all micro-services, on both the application and data storage layers.</li>
-        <li><strong>Decomposed</strong> portions of the monolith API application into maintainable <strong>micro-services</strong>.</li>
-        <li><strong>Maintained</strong> and <strong>documented</strong> current and legacy applications.</li>
-        <li><strong>Coordinated</strong> the <strong>communication</strong> among the engineering team and involved stakeholders.</li>
-        <li><strong>Onboarded</strong> and <strong>mentored</strong> new and current backend engineers with different tenures.</li>
-        <li><strong>Acted</strong> as a <strong>technical reference</strong> across multiple backend squads in tackling complex challenges.</li>
-        <li><strong>Moderated</strong> kick-off and brainstorming sessions with the engineering team.</li>
-        <li><strong>Led</strong> pair-/mob-programming and PR review sessions.</li>
-        <li><strong>Presented</strong> intermediate and advanced technical topics in the backend engineering chapter meeting.</li>
-        <li><strong>Interviewed</strong> and <strong>assessed</strong> prospect engineering candidates.</li>
+        <li><strong>Enabled</strong> <strong>multi-tenancy</strong> across microservices, both at the application and database layers, contributing to enhanced system <strong>modularity and scalability</strong>.</li>
+        <li><strong>Led</strong> the decomposition of monolithic APIs into <strong>maintainable microservices</strong>, driving improved maintainability and development speed.</li>
+        <li><strong>Acted</strong> as a technical reference and <strong>mentor</strong>, facilitating pair programming, code reviews, and technical sessions to uplift team expertise.</li>
       </ul>
       <ul class="tags">
-        <li>node</li>
+        <li>node-js</li>
         <li>go</li>
         <li>python</li>
         <li>bash</li>
-        <li>geojson</li>
         <li>kubernetes</li>
         <li>helm</li>
         <li>gcp</li>
         <li>gke</li>
-        <li>cloud-functions</li>
-        <li>big-query</li>
         <li>aws</li>
-        <li>ecs</li>
-        <li>lambda</li>
-        <li>rds</li>
-        <li>redshift</li>
-        <li>ebs</li>
-        <li>s3</li>
-        <li>sns</li>
-        <li>cloud-watch</li>
         <li>mongodb</li>
         <li>postgresql</li>
         <li>datadog</li>
@@ -259,10 +265,8 @@
       <h3><a id="arqam" href="https://arqamfc.com">ArqamFC</a><span>, Cairo, EG</span></h3>
       <span data-range="2015-05:2016-01">Lead Backend Engineer / May 2015 – Jan 2016 <span>(9 mos)</span></span>
       <ul class="role-details">
-        <li><strong>Revamped</strong> and <strong>maintained</strong> the infrastructure of the main portal used by the data collectors to achieve <strong>higher performance</strong> and <strong>faster response</strong> times.</li>
-        <li><strong>Built</strong> and maintained new internal tools to help <strong>migrate</strong> the platform to v2.</li>
-        <li>Built and maintained new API services to back the frontend tools used by the data collectors.</li>
-        <li><strong>Onboarded</strong> and <strong>mentored</strong> new team members, and acted as a <strong>technical reference</strong> for the technological stacks used in the platform.</li>
+        <li><strong>Revamped</strong> core infrastructure and API services to improve <strong>performance and responsiveness</strong> for data collection and portal management.</li>
+        <li><strong>Mentored</strong> team members and served as a technical authority, ensuring smooth <strong>migration</strong> to updated system versions and technologies.</li>
       </ul>
       <ul class="tags">
         <li>go</li>
@@ -341,9 +345,8 @@
       <h3><a id="robusta" href="https://robustastudio.com">Robusta</a><span>, New Cairo, EG</span></h3>
       <span data-range="2013-12:2015-04">Senior Software Engineer / Dec 2013 – Apr 2015 <span>(1 yrs, 5 mos)</span></span>
       <ul class="role-details">
-        <li><strong>Built</strong> the backend of Limopedia, a <strong>SaaS</strong> for limousine renting companies that offers them <strong>2–minute white-labeled solutions</strong>. It used to take a minimum of a week to rollout a new version of the platform for new customers.</li>
-        <li><strong>Developed</strong> the backend of LetsApp, a <strong>mobile social platform</strong> for events, using Ruby on Rails, MySQL and Redis.</li>
-        <li><strong>Implemented</strong> internal tools for EMC² and P&G to help manage their <strong>internal operations</strong>.</li>
+        <li><strong>Developed</strong> backend solutions for <strong>SaaS</strong> platforms (Limopedia and LetsApp) enabling rapid deployment and <strong>white-labeled customizations</strong> for clients.</li>
+        <li><strong>Built</strong> internal tools for high-profile clients to manage <strong>operational workflows</strong> effectively.</li>
       </ul>
       <ul class="tags">
         <li>ruby</li>
@@ -358,9 +361,7 @@
       <h3><a id="etisalat" href="https://etisalat.eg">Etisalat Misr</a><span>, New Cairo, EG</span></h3>
       <span data-range="2013-01:2013-11">System Analyst / Jan 2013 – Nov 2013 <span> (11 mos)</span></span>
       <ul class="role-details">
-        <li><strong>Worked</strong> with Teradata's DWH solution and SQL to generate BI reports.</li>
-        <li><strong>Designed</strong> analytical reports using SAP BusinessObjects Crystal Reports, and InfoView.</li>
-        <li><strong>Transformed</strong> business needs into technical requirements to be implemented according to their feasibility.</li>
+        <li><strong>Designed</strong> and generated BI reports using Teradata, SAP BusinessObjects, and SQL, transforming <strong>business needs</strong> into actionable <strong>technical requirements</strong>.</li>
       </ul>
       <ul class="tags">
         <li>sql</li>
@@ -375,10 +376,8 @@
       <h3><a id="mash" href="https://bit.ly/mashltd">mash, Ltd</a><span>, New Cairo, EG</span></h3>
       <span data-range="2008-06:2012-12">Senior Software Engineer, Co-founder / Jun 2008 – Dec 2012 <span>(4 yrs, 7 mos)</span></span>
       <ul class="role-details">
-        <li><strong>Led</strong> the planning and development of multiple Ruby on Rails projects such as Plan0roid, Raneen, SpeakOL (previously Naqeshny) and NasTrends.</li>
-        <li><strong>Developed</strong> multiple Ruby on Rails projects, such as Nabda Care, Nabda Net, FilBalad, Meetphool, and LiveAds.</li>
-        <li><strong>Handled</strong> clients and dealt with project managers and team leaders during the development cycle of these projects.</li>
-        <li><strong>Managed</strong> and <strong>led</strong> a team of seven full-stack engineers across multiple projects.</li>
+        <li><strong>Led</strong> end-to-end development of multiple high-impact Ruby on Rails projects, <strong>managing</strong> a team of software engineers and directly liaising with <strong>clients and project stakeholders</strong>.</li>
+        <li><strong>Delivered</strong> innovative digital solutions across diverse projects, emphasizing <strong>agile development</strong> and rapid deployment.</li>
       </ul>
       <ul class="tags">
         <li>ruby</li>
@@ -408,7 +407,7 @@
       </div>
     </div>
 
-    <div class="no-break">
+    <div class="no-break hide">
       <h2>Skills and Competences</h2>
 
       <h3 id="technology">Technical Skills</h3>
@@ -423,7 +422,7 @@
     </div>
 
     <div class="no-break">
-      <h3 id="languages">Languages</h3>
+      <h2 id="languages">Languages</h3>
       <dl class="compact">
         <dt>Fluent</dt>
         <dd>English, Arabic</dd>
