@@ -105,6 +105,7 @@
 
       @media print {
         .no-break { page-break-inside: avoid; }
+        .new-page { page-break-before: always; }
         h3:before, h4:before { display: none !important; }
         span:not([data-range*=":"]) span { display: none; }
       }
@@ -390,7 +391,7 @@
       </ul>
     </div>
 
-    <div class="no-break">
+    <div class="no-break new-page">
       <h2>Education</h2>
 
       <div>
