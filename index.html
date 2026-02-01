@@ -47,14 +47,14 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" />
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" /> -->
-    <link rel="stylesheet" href="typicons.min.css" />
+    <link rel="stylesheet" href="/typicons.min.css" />
     <style type="text/css">
       html, body { height: 100%; background-color: white; color: black; padding: 0; }
 
       * { font-family: "Muli", sans-serif; }
       a { text-decoration: none; color: black !important; display: inline-block; }
-      a span { border-bottom: 1px dashed transparent; }
-      a:hover span { border-bottom-color: inherit; }
+      a span { display: inline-block; border-bottom: 1px dashed transparent; }
+      a:hover span { border-bottom-color: currentColor; }
       .main { position: relative; min-height: 100%; min-width: 300px; max-width: 300px; padding: 30px 0; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
       .info { margin-top: 30px; padding: 0 10px; }
       .info audio { display: none; }
@@ -84,6 +84,9 @@
       .social span { display: inline-block; vertical-align: middle; padding: 2px 0; }
       .social.compact li { display: inline-block; }
       .social.compact span { display: inline-block; text-indent: -999px; }
+      .footer { font-size: 0; padding: 0; }
+      .footer li { font-size: x-small; display: inline-block; }
+      .footer li:not(:first-child):before { content: "\2022"; margin: 0 5px; }
       .down, .up { display: none; }
       .down { position: absolute; bottom: 10px; width: 100%; text-align: center; margin-left: -30px; }
       .up { position: absolute; top: 10px; width: 100%; text-align: center; margin-left: -30px; }
@@ -159,6 +162,10 @@
           <li><a href="https://www.tiktok.com/@ramin0_"><i class="typcn typcn-social-tiktok-circular"></i><span>tiktok.com/@ramin0_</span></a></li>
           <li><a href="https://x.com/ramin0"><i class="typcn typcn-social-x-circular"></i><span>x.com/ramin0</span></a></li>
           <li><a href="https://scholar.google.com/citations?user=Ky4QF-AAAAAJ"><i class="typcn typcn-social-google-scholar-circular"></i><span>scholar.google.com/citations?user=Ky4QF-AAAAAJ</span></a></li>
+        </ul>
+        <ul class="footer">
+          <li><a href="/tos"><span>Terms of Service</span></a></li>
+          <li><a href="/privacy"><span>Privacy Policy</span></a></li>
         </ul>
       </div>
       <div class="down"><a class="rotate-90" href="#gallery"><i class="typcn typcn-chevron-right"></i></a></div>

@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "typicons";
-  src: url("typicons.eot?27dfef5f936b31102d6ee78a59526d9c?#iefix") format("embedded-opentype"),
-url("typicons.woff2?27dfef5f936b31102d6ee78a59526d9c") format("woff2"),
-url("typicons.woff?27dfef5f936b31102d6ee78a59526d9c") format("woff"),
-url("typicons.ttf?27dfef5f936b31102d6ee78a59526d9c") format("truetype"),
-url("typicons.svg?27dfef5f936b31102d6ee78a59526d9c#typicons") format("svg");
+  src: url("typicons.eot?c16a62ca93f6b6b7df5a6a80ac8df900?#iefix") format("embedded-opentype"),
+url("typicons.woff2?c16a62ca93f6b6b7df5a6a80ac8df900") format("woff2"),
+url("typicons.woff?c16a62ca93f6b6b7df5a6a80ac8df900") format("woff"),
+url("typicons.ttf?c16a62ca93f6b6b7df5a6a80ac8df900") format("truetype"),
+url("typicons.svg?c16a62ca93f6b6b7df5a6a80ac8df900#typicons") format("svg");
 }
 
 .typcn:before {
@@ -38,6 +38,9 @@ url("typicons.svg?27dfef5f936b31102d6ee78a59526d9c#typicons") format("svg");
   font-size: 5em;
 }
 
+.typcn-arrow-left:before {
+  content: "\e00e";
+}
 .typcn-arrow-right:before {
   content: "\e01b";
 }
