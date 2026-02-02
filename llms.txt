@@ -1,0 +1,41 @@
+# Ramy Aboulnaga
+
+> Full Stack Software Engineer specializing in Go and Ruby development
+
+## About
+
+Ramy Aboulnaga (also known as RaMin0) is a Full Stack Software Engineer based in Cairo, Egypt. He specializes in backend development with Go (Golang) and Ruby on Rails, with additional expertise in JavaScript, TypeScript, Python, Docker, and Kubernetes.
+
+## Contact
+
+- Website: https://ramy.aboulna.ga
+- GitHub: https://github.com/ramin0
+- LinkedIn: https://linkedin.com/in/ramin0
+- YouTube: https://youtube.com/RamyAboulNaga
+
+## Skills
+
+- Languages: Go, Ruby, JavaScript, TypeScript, Python
+- Frameworks: Ruby on Rails, React
+- Infrastructure: Docker, Kubernetes, Cloud platforms
+- Databases: PostgreSQL, MySQL, Redis
+- APIs: REST, GraphQL
+
+## Content
+
+### Educational Videos
+
+Ramy creates programming tutorials and live coding sessions on YouTube:
+
+- **Building a Twelve-Factor App**: A 6-part series on modern application development practices
+- **Coding in Go (Arabic)**: A 19-episode series teaching Go programming in Arabic
+- **Live Streams**: Regular live coding sessions covering various programming topics
+
+### Curriculum Vitae
+
+Full CV available at: https://ramy.aboulna.ga/cv
+
+## Legal
+
+- Terms of Service: https://ramy.aboulna.ga/tos
+- Privacy Policy: https://ramy.aboulna.ga/privacy

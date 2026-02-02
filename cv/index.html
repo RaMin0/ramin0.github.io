@@ -12,11 +12,14 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Ramy Aboulnaga (@RaMin0) &bull; Curriculum Vitae</title>
+    <title>Ramy Aboulnaga CV - Software Engineer | Experience & Skills</title>
     <meta name="author" content="Ramy Aboulnaga" />
-    <meta name="description" content="Software Engineer" />
-    <meta name="keywords" content="software, engineer, development, programming, tutorials, web, golang, ruby, rails, chatbot, facebook, messenger, youtube" />
+    <meta name="description" content="Software Engineer CV of Ramy Aboulnaga. 10+ years experience in Go, Ruby, Python, and cloud. View my skills, work history, and achievements." />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Ramy Aboulnaga, RaMin0, software engineer, full stack developer, backend developer, frontend developer, web development, programming, golang, go, ruby, rails, javascript, typescript, python, docker, kubernetes, cloud, API, curriculum vitae, resume, CV, portfolio, Cairo, Egypt" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#252525" />
+    <link rel="canonical" href="https://ramy.aboulna.ga/cv/" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
@@ -37,14 +40,56 @@
     <meta name="msapplication-TileColor" content="#252525" />
     <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
     <meta name="application-name" content="RaMin0" />
-    <meta property="og:title" content="Ramy Aboulnaga (@RaMin0)" />
-    <meta property="og:url" content="https://ramy.aboulna.ga" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Software Engineer" />
+    <meta property="og:title" content="Ramy Aboulnaga CV - Software Engineer" />
+    <meta property="og:site_name" content="RaMin0" />
+    <meta property="og:url" content="https://ramy.aboulna.ga/cv/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content="Ramy" />
+    <meta property="profile:last_name" content="Aboulnaga" />
+    <meta property="profile:username" content="RaMin0" />
+    <meta property="og:description" content="Software Engineer CV with 10+ years experience in Go, Ruby, Python, and cloud technologies." />
     <!-- <meta property="og:image" content="https://graph.facebook.com/569330281/picture?type=large&redirect=true&width=720&height=720" /> -->
     <meta property="og:image" content="https://ramy.aboulna.ga/ramy-aboul-naga.jpg?20210723154156" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RaMin0" />
+    <meta name="twitter:creator" content="@RaMin0" />
+    <meta name="twitter:title" content="Ramy Aboulnaga CV - Software Engineer" />
+    <meta name="twitter:description" content="Software Engineer CV with 10+ years experience in Go, Ruby, Python, and cloud technologies." />
+    <meta name="twitter:image" content="https://ramy.aboulna.ga/ramy-aboul-naga.jpg?20210723154156" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ramy.aboulna.ga/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Curriculum Vitae",
+        "item": "https://ramy.aboulna.ga/cv/"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Ramy Aboulnaga",
+        "alternateName": "RaMin0",
+        "jobTitle": "Software Engineer",
+        "url": "https://ramy.aboulna.ga",
+        "image": "https://ramy.aboulna.ga/ramy-aboul-naga.jpg"
+      }
+    }
+    </script>
     <style type="text/css">
       html, body { background-color: white; color: black }
       body { max-width: 700px; margin: auto; padding: 30px 10px; }
@@ -119,8 +164,11 @@
     <ul class="personal-info">
       <li><span>dob:</span> 21 Mar 1989</li>
       <li><span>address:</span> Copenhagen, DK</li>
-      <li><span>tel:</span> <a href="&#116;&#101;&#108;&#58;&#52;&#53;&#53;&#50;&#55;&#56;&#48;&#57;&#51;&#51;">&#43;&#52;&#53;&#32;&#53;&#50;&#32;&#55;&#56;&#32;&#48;&#57;&#32;&#51;&#51;</a></li>
-      <li><span>email:</span> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#109;&#121;&#64;&#97;&#98;&#111;&#117;&#108;&#110;&#97;&#46;&#103;&#97;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#72;&#105;">&#114;&#97;&#109;&#121;&#64;&#97;&#98;&#111;&#117;&#108;&#110;&#97;&#46;&#103;&#97;</a></li>
+      <li><span>tel:</span> <a id="tel-link" href="#" id="tel-text"></a></li>
+      <li><span>email:</span> <a id="cv-email-link" href="#" id="cv-email-text"></a></li>
+      <script>
+        (function(){var a='ramy',b='aboulna.ga',c=a+'@'+b;var l=document.getElementById('cv-email-link');l.href='mail'+'to:'+c+'?subject=Hi';l.textContent=c;var p='+45 52 78 09 33';var tl=document.getElementById('tel-link');tl.href='tel:'+p.replace(/\s/g,'');tl.textContent=p;})();
+      </script>
     </ul>
     <ul class="personal-info">
       <li><span>linkedin:</span> <a href="https://linkedin.com/in/ramin0">linkedin.com/in/ramin0</a></li>

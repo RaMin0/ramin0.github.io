@@ -1,0 +1,6 @@
+# robots.txt for ramy.aboulna.ga
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ramy.aboulna.ga/sitemap.xml
