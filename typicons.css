@@ -2,6 +2,7 @@
 
 @font-face {
   font-family: "typicons";
+  font-display: swap;
   src: url("typicons.eot?c16a62ca93f6b6b7df5a6a80ac8df900?#iefix") format("embedded-opentype"),
 url("typicons.woff2?c16a62ca93f6b6b7df5a6a80ac8df900") format("woff2"),
 url("typicons.woff?c16a62ca93f6b6b7df5a6a80ac8df900") format("woff"),

@@ -2,6 +2,7 @@
   <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preload" href="/ramy-aboul-naga.webp" as="image" type="image/webp" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
@@ -53,7 +54,6 @@
     <meta property="profile:last_name" content="Aboulnaga" />
     <meta property="profile:username" content="RaMin0" />
     <meta property="og:description" content="Full Stack Software Engineer specializing in Go and Ruby. Explore my portfolio and tutorials." />
-    <!--<meta property="og:image" content="https://graph.facebook.com/569330281/picture?type=large&redirect=true&width=720&height=720" />-->
     <meta property="og:image" content="https://ramy.aboulna.ga/ramy-aboul-naga.jpg?20210723154156" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@RaMin0" />
@@ -61,12 +61,16 @@
     <meta name="twitter:title" content="Ramy Aboulnaga - Full Stack Software Engineer" />
     <meta name="twitter:description" content="Full Stack Software Engineer specializing in Go and Ruby. Explore my portfolio and tutorials." />
     <meta name="twitter:image" content="https://ramy.aboulna.ga/ramy-aboul-naga.jpg?20210723154156" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /></noscript>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" />
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" /> -->
-    <link rel="stylesheet" href="/typicons.min.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="/typicons.min.css" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" />
+      <link rel="stylesheet" href="/typicons.min.css" />
+    </noscript>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -217,10 +221,11 @@
           <small>Curriculum Vitae <i class="typcn typcn-arrow-right"></i></small>
         </a></h2>
         <ul class="social">
-          <li><a id="email-link" href="#"><i class="typcn typcn-social-at-circular"></i><span id="email-text"></span></a></li>
+          <li id="email-item"><a id="email-link" href="#"><i class="typcn typcn-social-at-circular"></i><span id="email-text"></span></a></li>
           <script>
             (function(){var a='ramy',b='aboulna.ga',c=a+'@'+b;var l=document.getElementById('email-link');var t=document.getElementById('email-text');l.href='mail'+'to:'+c+'?subject=Hi';t.textContent=c;})();
           </script>
+          <noscript><style>#email-item{display:none}</style></noscript>
           <li><a href="https://github.com/ramin0" rel="me" title="GitHub Profile"><i class="typcn typcn-social-github-circular"></i><span>github.com/ramin0</span></a></li>
           <li><a href="https://linkedin.com/in/ramin0" rel="me" title="LinkedIn Profile"><i class="typcn typcn-social-linkedin-circular"></i><span>linkedin.com/in/ramin0</span></a></li>
         </ul>

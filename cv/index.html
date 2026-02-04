@@ -52,7 +52,6 @@
     <meta property="profile:last_name" content="Aboulnaga" />
     <meta property="profile:username" content="RaMin0" />
     <meta property="og:description" content="Software Engineer CV with 10+ years experience in Go, Ruby, Python, and cloud technologies." />
-    <!-- <meta property="og:image" content="https://graph.facebook.com/569330281/picture?type=large&redirect=true&width=720&height=720" /> -->
     <meta property="og:image" content="https://ramy.aboulna.ga/ramy-aboul-naga.jpg?20210723154156" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@RaMin0" />
@@ -60,8 +59,12 @@
     <meta name="twitter:title" content="Ramy Aboulnaga CV - Software Engineer" />
     <meta name="twitter:description" content="Software Engineer CV with 10+ years experience in Go, Ruby, Python, and cloud technologies." />
     <meta name="twitter:image" content="https://ramy.aboulna.ga/ramy-aboul-naga.jpg?20210723154156" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+      <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" />
+    </noscript>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -167,11 +170,12 @@
     <ul class="personal-info">
       <li><span>dob:</span> 21 Mar 1989</li>
       <li><span>address:</span> Copenhagen, DK</li>
-      <li><span>tel:</span> <a id="tel-link" href="#" id="tel-text"></a></li>
-      <li><span>email:</span> <a id="cv-email-link" href="#" id="cv-email-text"></a></li>
+      <li id="tel-item"><span>tel:</span> <a id="tel-link" href="#"></a></li>
+      <li id="cv-email-item"><span>email:</span> <a id="cv-email-link" href="#"></a></li>
       <script>
         (function(){var a='ramy',b='aboulna.ga',c=a+'@'+b;var l=document.getElementById('cv-email-link');l.href='mail'+'to:'+c+'?subject=Hi';l.textContent=c;var p='+45 52 78 09 33';var tl=document.getElementById('tel-link');tl.href='tel:'+p.replace(/\s/g,'');tl.textContent=p;})();
       </script>
+      <noscript><style>#tel-item,#cv-email-item{display:none}.personal-info:first-of-type li:nth-child(2){margin-left:auto}</style></noscript>
     </ul>
     <ul class="personal-info">
       <li><span>linkedin:</span> <a href="https://linkedin.com/in/ramin0">linkedin.com/in/ramin0</a></li>
