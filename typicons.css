@@ -3,11 +3,11 @@
 @font-face {
   font-family: "typicons";
   font-display: swap;
-  src: url("typicons.eot?c16a62ca93f6b6b7df5a6a80ac8df900?#iefix") format("embedded-opentype"),
-url("typicons.woff2?c16a62ca93f6b6b7df5a6a80ac8df900") format("woff2"),
-url("typicons.woff?c16a62ca93f6b6b7df5a6a80ac8df900") format("woff"),
-url("typicons.ttf?c16a62ca93f6b6b7df5a6a80ac8df900") format("truetype"),
-url("typicons.svg?c16a62ca93f6b6b7df5a6a80ac8df900#typicons") format("svg");
+  src: url("typicons.eot?9d3927fedafa0103fa83f483a01561f1?#iefix") format("embedded-opentype"),
+url("typicons.woff2?9d3927fedafa0103fa83f483a01561f1") format("woff2"),
+url("typicons.woff?9d3927fedafa0103fa83f483a01561f1") format("woff"),
+url("typicons.ttf?9d3927fedafa0103fa83f483a01561f1") format("truetype"),
+url("typicons.svg?9d3927fedafa0103fa83f483a01561f1#typicons") format("svg");
 }
 
 .typcn:before {
@@ -83,4 +83,7 @@ url("typicons.svg?c16a62ca93f6b6b7df5a6a80ac8df900#typicons") format("svg");
 }
 .typcn-social-x-circular:before {
   content: "\e152";
+}
+.typcn-social-orcid-circular:before {
+  content: "\e153";
 }
